@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { Sidebar } from './components/Sidebar'
 import { AppProvider } from './context/AppContext'
 import { PrinciplesPage } from './pages/PrinciplesPage'
@@ -9,7 +9,8 @@ import { QAPage } from './pages/QAPage'
 export default function App() {
   return (
     <AppProvider>
-      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+      {/* HashRouter: GitHub Pages 서브패스에서 경로 이탈/404 방지 */}
+      <HashRouter>
         <div className="app-shell with-sidebar">
           <Sidebar />
           <main className="main-content sidebar-main">
@@ -22,7 +23,7 @@ export default function App() {
             </Routes>
           </main>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </AppProvider>
   )
 }
