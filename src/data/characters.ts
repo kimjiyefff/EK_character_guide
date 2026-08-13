@@ -1,3 +1,5 @@
+import { assetUrl } from '../utils/assetUrl'
+
 /**
  * 캐릭터 공식 기준 데이터
  *
@@ -205,8 +207,8 @@ export const CHARACTERS: CharacterRecord[] = [
     subtitle: '갈색 · 부족 패턴',
     heightUnits: 3.8,
     color: '#8B5A2B',
-    sizeThumbUrl: '/characters/tipa/SIZE_3D.png',
-    thumbUrl: '/characters/tipa/ORIGINAL.png',
+    sizeThumbUrl: assetUrl('/characters/tipa/SIZE_3D.png'),
+    thumbUrl: assetUrl('/characters/tipa/ORIGINAL.png'),
     zipUrl: null,
     ratio: buildRatio(),
     fixedFeatures: {
@@ -229,8 +231,8 @@ export const CHARACTERS: CharacterRecord[] = [
       { part: '치마 그린', hex: '#3FA34D', rgb: '63, 163, 77' },
     ],
     images: buildImagePack('tipa', 'TIPA', {
-      original: '/characters/tipa/ORIGINAL.png',
-      master: '/characters/tipa/MASTER_3D.png',
+      original: assetUrl('/characters/tipa/ORIGINAL.png'),
+      master: assetUrl('/characters/tipa/MASTER_3D.png'),
     }),
     personality: [],
     promptIdentity: [
@@ -246,8 +248,8 @@ export const CHARACTERS: CharacterRecord[] = [
     subtitle: '핑크 · 노란 리본',
     heightUnits: 2.9,
     color: '#E85D75',
-    sizeThumbUrl: '/characters/kini/SIZE_3D.png',
-    thumbUrl: '/characters/kini/ORIGINAL.png',
+    sizeThumbUrl: assetUrl('/characters/kini/SIZE_3D.png'),
+    thumbUrl: assetUrl('/characters/kini/ORIGINAL.png'),
     zipUrl: null,
     ratio: buildRatio(),
     fixedFeatures: {
@@ -263,8 +265,8 @@ export const CHARACTERS: CharacterRecord[] = [
       { part: '눈 흰자', hex: '#FFFFFF', rgb: '255, 255, 255' },
     ],
     images: buildImagePack('kini', 'KINI', {
-      original: '/characters/kini/ORIGINAL.png',
-      master: '/characters/kini/MASTER_3D.png',
+      original: assetUrl('/characters/kini/ORIGINAL.png'),
+      master: assetUrl('/characters/kini/MASTER_3D.png'),
     }),
     personality: [],
     promptIdentity: [
@@ -280,8 +282,8 @@ export const CHARACTERS: CharacterRecord[] = [
     subtitle: '블루 · 노란 멜빵',
     heightUnits: 2.9,
     color: '#3D7EA6',
-    sizeThumbUrl: '/characters/pani/SIZE_3D.png',
-    thumbUrl: '/characters/pani/ORIGINAL.png',
+    sizeThumbUrl: assetUrl('/characters/pani/SIZE_3D.png'),
+    thumbUrl: assetUrl('/characters/pani/ORIGINAL.png'),
     zipUrl: null,
     ratio: buildRatio(),
     fixedFeatures: {
@@ -297,8 +299,8 @@ export const CHARACTERS: CharacterRecord[] = [
       { part: '삼각형 포인트', hex: '#E07A3D', rgb: '224, 122, 61' },
     ],
     images: buildImagePack('pani', 'PANI', {
-      original: '/characters/pani/ORIGINAL.png',
-      master: '/characters/pani/MASTER_3D.png',
+      original: assetUrl('/characters/pani/ORIGINAL.png'),
+      master: assetUrl('/characters/pani/MASTER_3D.png'),
     }),
     personality: [],
     promptIdentity: [
@@ -313,8 +315,8 @@ export const CHARACTERS: CharacterRecord[] = [
     subtitle: '옐로 · 유랑악단',
     heightUnits: 2.2,
     color: '#FDCE15',
-    sizeThumbUrl: '/characters/huni/SIZE_3D.png',
-    thumbUrl: '/characters/huni/ORIGINAL.png',
+    sizeThumbUrl: assetUrl('/characters/huni/SIZE_3D.png'),
+    thumbUrl: assetUrl('/characters/huni/ORIGINAL.png'),
     zipUrl: null,
     ratio: buildRatio(),
     fixedFeatures: {
@@ -345,8 +347,8 @@ export const CHARACTERS: CharacterRecord[] = [
       { part: '입 안', hex: '#E85A4F', rgb: '232, 90, 79' },
     ],
     images: buildImagePack('huni', 'HUNI', {
-      original: '/characters/huni/ORIGINAL.png',
-      master: '/characters/huni/MASTER_3D.png',
+      original: assetUrl('/characters/huni/ORIGINAL.png'),
+      master: assetUrl('/characters/huni/MASTER_3D.png'),
     }),
     personality: [
       '유랑악단의 귀염둥이 악동',
@@ -367,8 +369,8 @@ export const CHARACTERS: CharacterRecord[] = [
     subtitle: '화이트 · 최대 사이즈',
     heightUnits: 5,
     color: '#5B6B7A',
-    sizeThumbUrl: '/characters/hapa/SIZE_3D.png',
-    thumbUrl: '/characters/hapa/ORIGINAL.png',
+    sizeThumbUrl: assetUrl('/characters/hapa/SIZE_3D.png'),
+    thumbUrl: assetUrl('/characters/hapa/ORIGINAL.png'),
     zipUrl: null,
     ratio: buildRatio(),
     fixedFeatures: {
@@ -392,13 +394,13 @@ export const CHARACTERS: CharacterRecord[] = [
       { part: '삼각형 포인트', hex: '#E07A3D', rgb: '224, 122, 61' },
     ],
     images: buildImagePack('hapa', 'HAPA', {
-      original: '/characters/hapa/ORIGINAL.png',
-      master: '/characters/hapa/MASTER_3D.png',
+      original: assetUrl('/characters/hapa/ORIGINAL.png'),
+      master: assetUrl('/characters/hapa/MASTER_3D.png'),
       masterViews: {
-        '45': '/characters/hapa/MASTER_3D_45.png',
-        front: '/characters/hapa/MASTER_3D_FRONT.png',
-        back: '/characters/hapa/MASTER_3D_BACK.png',
-        pose: '/characters/hapa/MASTER_3D_FRONT.png',
+        '45': assetUrl('/characters/hapa/MASTER_3D_45.png'),
+        front: assetUrl('/characters/hapa/MASTER_3D_FRONT.png'),
+        back: assetUrl('/characters/hapa/MASTER_3D_BACK.png'),
+        pose: assetUrl('/characters/hapa/MASTER_3D_FRONT.png'),
       },
     }),
     personality: [],
