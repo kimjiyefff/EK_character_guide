@@ -9,7 +9,7 @@ import { QAPage } from './pages/QAPage'
 export default function App() {
   return (
     <AppProvider>
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
         <div className="app-shell with-sidebar">
           <Sidebar />
           <main className="main-content sidebar-main">
